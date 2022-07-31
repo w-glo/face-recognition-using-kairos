@@ -1,4 +1,4 @@
-package com.wajahat.facerecognition
+package com.wajahat.facerecognition.model.response
 
 import kotlinx.serialization.Serializable
 
@@ -6,4 +6,4 @@ import kotlinx.serialization.Serializable
  * Created by Wajahat Jawaid(wajahatjawaid@gmail.com)
  */
 @Serializable
-data class Transaction(val face_id: String)
+data class EnrollResponse(val face_id: String)

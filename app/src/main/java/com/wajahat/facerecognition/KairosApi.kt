@@ -1,5 +1,9 @@
 package com.wajahat.facerecognition
 
+import com.wajahat.facerecognition.model.RequestEnroll
+import com.wajahat.facerecognition.model.RequestRecognize
+import com.wajahat.facerecognition.model.response.EnrollResponse
+import com.wajahat.facerecognition.model.response.RecognizeResponse
 import io.ktor.client.request.*
 import io.ktor.http.*
 import timber.log.Timber
