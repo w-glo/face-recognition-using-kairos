@@ -10,7 +10,7 @@ import timber.log.Timber
 class KairosApi {
 
     suspend fun recognize(): RecognizeResponse {
-        Timber.d("Recognizing")
+        Timber.d("Recognizingss")
         return ktorHttpClient.post<RecognizeResponse>("https://slct82o04d.execute-api.ap-south-1.amazonaws.com/staging/public/experience/outing/search") {
             method = HttpMethod.Get
 //            body = Request(image, galleryName)
