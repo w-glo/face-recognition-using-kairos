@@ -1,4 +1,4 @@
-package com.wajahat.facerecognition
+package com.wajahat.facerecognition.model
 
 import kotlinx.serialization.Serializable
 
