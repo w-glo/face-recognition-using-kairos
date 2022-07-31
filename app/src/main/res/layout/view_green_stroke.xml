@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+    </data>
+
+    <com.rafakob.drawme.DrawMeButton xmlns:tools="http://schemas.android.com/tools"
+        style="@style/AppTheme.Button.GreenStroke"
+        android:text="@{title}"
+        tools:text="@string/scan" />
+</layout>

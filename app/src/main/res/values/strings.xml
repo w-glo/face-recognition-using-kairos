@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SelfTest</string>
+    <string name="address">Address</string>
+    <string name="anonymous_protection_anonymous_check_in">Anonymous Protection\nAnonymous Check-in</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="create_digital_avatar">Create your biometric\ndigital ID avatar</string>
+    <string name="create_avatar">Create your avatar</string>
+    <string name="create_profile">Create your profile</string>
+    <string name="dob">Date of Birth</string>
+    <string name="digital_id_avatar">Digital-ID Avatar</string>
+    <string name="email">Email (Optional)</string>
+    <string name="face_id">Face ID</string>
+    <string name="face_id_scanned">Face ID: Scan Completed</string>
+    <string name="fingerprints">Fingerprints</string>
+    <string name="fingerprints_scanned">Fingerprints: Scan Completed</string>
+    <string name="full_name">Full Name (Same as National ID)</string>
+    <string name="gender">Gender</string>
+    <string name="health_passport">Health Passport</string>
+    <string name="next">Next</string>
+    <string name="phone">Phone Number (Optional)</string>
+    <string name="please_select">Please Select</string>
+    <string name="scan">Scan</string>
+    <string name="scan_completed">Scan Completed</string>
+    <string name="zek_id_wallet_avatar">Zek-ID wallet avatar</string>
+</resources>

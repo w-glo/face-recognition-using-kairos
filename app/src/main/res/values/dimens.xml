@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_xxsmall">4dp</dimen>
+    <dimen name="margin_xsmall">8dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">24dp</dimen>
+    <dimen name="margin_xxlarge">32dp</dimen>
+    <dimen name="margin_xxxlarge">48dp</dimen>
+
+    <!-- Commons -->
+    <dimen name="button_green_stroke_height">36dp</dimen>
+    <dimen name="dialog.input.button.height">38dp</dimen>
+    <dimen name="divider.horizontal.height">0.5dp</dimen>
+
+    <!-- On-boarding -->
+    <dimen name="onboarding_text_margin_top">60dp</dimen>
+</resources>

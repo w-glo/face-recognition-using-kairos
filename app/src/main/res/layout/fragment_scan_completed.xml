@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_primary"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:id="@+id/view_progress"
+            style="@style/AppTheme.OnBoarding.ProgressView"
+            tools:ignore="MissingConstraints" />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/view_onboarding_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/view_progress" />
+
+        <TextView
+            android:id="@+id/text_create_avatar"
+            style="@style/AppTheme.OnBoarding.Text"
+            android:layout_marginTop="@dimen/onboarding_text_margin_top"
+            android:text="@string/create_digital_avatar"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <TextView
+            android:id="@+id/text_face_id"
+            style="@style/AppTheme.OnBoarding.Text"
+            android:layout_marginTop="@dimen/onboarding_text_margin_top"
+            android:text="@string/face_id_scanned"
+            app:layout_constraintTop_toBottomOf="@id/text_create_avatar" />
+
+        <TextView
+            android:id="@+id/text_fingerprint"
+            style="@style/AppTheme.OnBoarding.Text"
+            android:layout_marginTop="@dimen/margin_xxsmall"
+            android:text="@string/fingerprints_scanned"
+            app:layout_constraintTop_toBottomOf="@id/text_face_id" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_create_profile"
+                style="@style/AppTheme.OnBoarding.Text"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/create_profile" />
+
+            <include
+                layout="@layout/view_green_stroke"
+                app:title="@{@string/next}" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
