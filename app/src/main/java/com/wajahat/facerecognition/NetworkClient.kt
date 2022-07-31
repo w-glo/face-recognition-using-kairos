@@ -11,6 +11,7 @@ import io.ktor.client.features.json.serializer.*
 import io.ktor.client.features.logging.*
 import io.ktor.client.features.observer.*
 import io.ktor.client.request.*
+import io.ktor.http.*
 import timber.log.Timber
 
 private const val TIME_OUT = 60_000
@@ -39,7 +40,7 @@ val ktorHttpClient = HttpClient(Android) {
             }
 
         }
-        level = LogLevel.ALL
+        level = LogLevel.INFO
     }
 
     install(ResponseObserver) {
@@ -51,7 +52,7 @@ val ktorHttpClient = HttpClient(Android) {
 
     install(DefaultRequest) {
         Timber.d("Installing DefaultRequest")
-//        header(HttpHeaders.ContentType, ContentType.Application.Json)
+        header(HttpHeaders.ContentType, ContentType.Application.Json)
         header("Content-Type", "application/json")
         header("app_id", "bb3c0e3d")
         header("app_key", "74aa45ae066df94e34d04eb4d536dcdb")
